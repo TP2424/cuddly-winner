@@ -35,8 +35,8 @@ class Circle(QMainWindow):
             x, y = [randint(10, 500) for i in range(2)]
             d = randint(10, 500)
 
-            # qp.setBrush(QColor(*[randint(0, 255) for i in range(3)]))
-            qp.setBrush(QColor(255,255,0))
+            qp.setBrush(QColor(*[randint(0, 255) for i in range(3)]))
+            # qp.setBrush(QColor(255,255,0))
             qp.drawEllipse(x, y, d, d)
             self.Flag = False
             qp.end()
